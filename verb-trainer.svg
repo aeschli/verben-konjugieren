@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="180" viewBox="0 0 240 180">
+  <rect x="4" y="4" width="232" height="172" rx="36" fill="#e8efff"/>
+  <ellipse cx="120" cy="155" rx="86" ry="9" fill="#d2def7"/>
+  <path d="M34 87Q78 74 120 94Q162 74 206 87V147Q162 134 120 154Q78 134 34 147Z" fill="#2b6ef2"/>
+  <path d="M42 80Q82 70 120 90V146Q82 126 42 138Z" fill="#fff"/>
+  <path d="M120 90Q158 70 198 80V138Q158 126 120 146Z" fill="#f5f7fb"/>
+  <g fill="none" stroke="#a9bfe9" stroke-width="4" stroke-linecap="round">
+    <path d="M56 96Q80 92 103 103M56 109Q80 105 103 116M56 122Q80 118 103 129"/>
+    <path d="M137 103Q160 92 184 96M137 116Q160 105 184 109M137 129Q160 118 184 122"/>
+  </g>
+  <path d="M22 24Q22 16 30 16H76Q84 16 84 24V48Q84 56 76 56H57L44 67V56H30Q22 56 22 48Z" fill="#2b6ef2"/>
+  <path d="M91 39Q91 31 99 31H141Q149 31 149 39V61Q149 69 141 69H128L116 80V69H99Q91 69 91 61Z" fill="#1f7a1f"/>
+  <path d="M158 22Q158 14 166 14H210Q218 14 218 22V46Q218 54 210 54H193L181 65V54H166Q158 54 158 46Z" fill="#2b6ef2"/>
+  <g fill="#fff" font-family="system-ui, sans-serif" font-size="19" font-weight="600" text-anchor="middle">
+    <text x="53" y="43">ich</text>
+    <text x="120" y="57">du</text>
+    <text x="188" y="41">wir</text>
+  </g>
+</svg>

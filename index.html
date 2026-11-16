@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deutsch Verb-Trainer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <div>
+          <h1>Deutsch Verb-Trainer</h1>
+          <p>
+            Übe unregelmäßige Verben in <strong>Präsens</strong>,
+            <strong>Futur I</strong>, <strong>Präteritum</strong> und
+            <strong>Perfekt</strong>.
+          </p>
+          <p><a href="help.html">Hilfe</a></p>
+        </div>
+        <img
+          class="header-picture"
+          src="verb-trainer.svg"
+          alt="Ein aufgeschlagenes Buch mit Sprechblasen für ich, du und wir."
+          width="240"
+          height="180"
+        />
+      </header>
+
+      <section class="controls card" aria-label="Einstellungen">
+        <div class="grid">
+          <label>
+            Verb
+            <select id="verbSelect"></select>
+          </label>
+
+          <label>
+            Zeitform
+            <select id="tenseSelect">
+              <option value="praesens">Präsens</option>
+              <option value="futur">Futur I</option>
+              <option value="praeteritum">Präteritum</option>
+              <option value="perfekt">Perfekt</option>
+              <option value="mixed">Gemischt</option>
+            </select>
+          </label>
+
+          <label>
+            Person
+            <select id="personSelect">
+              <option value="ich">ich</option>
+              <option value="du">du</option>
+              <option value="er/sie/es">er / sie / es</option>
+              <option value="wir">wir</option>
+              <option value="ihr">ihr</option>
+              <option value="sie/Sie">sie / Sie</option>
+              <option value="mixed">Gemischt</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="nextBtn" type="button">Neue Aufgabe</button>
+          <button id="showBtn" type="button" class="secondary">Lösung zeigen</button>
+        </div>
+      </section>
+
+      <section class="quiz card" aria-live="polite">
+        <p class="prompt" id="promptText">Klicke auf „Neue Aufgabe“.</p>
+        <form id="answerForm" autocomplete="off">
+          <label>
+            Deine Antwort
+            <input id="answerInput" type="text" placeholder="z. B. ich ging" />
+          </label>
+          <button type="submit">Prüfen</button>
+        </form>
+
+        <p id="feedback" class="feedback"></p>
+      </section>
+
+      <section class="progress card" aria-label="Fortschritt">
+        <h2>Fortschritt</h2>
+        <p id="scoreText">Richtig: 0 | Falsch: 0</p>
+      </section>
+
+      <footer>
+        <small>
+          Tipp: Für Perfekt bitte immer mit Hilfsverb schreiben (z. B.
+          „ich bin gegangen“).
+        </small>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
